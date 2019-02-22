@@ -1,0 +1,150 @@
+
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+  color: white;
+  padding: 10px 400px;
+  align-items: center;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.App {
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  padding-left: 90px;
+  background-color: #edf1f5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.App .body {
+  padding: 0px 70px 20px;
+  margin-bottom: 30px;
+}
+.App .body .sidebar {
+  order: -1;
+  max-width: 12em;
+  flex-grow: 0;
+  /* Defined the ability to groe */
+  flex-shrink: 0;
+  /* Defines the ability to shrink */
+  flex-basis: 12em;
+  /* Default value of the element before distribuing the remaing space */
+}
+
+.wm-Nav-LeftPane {
+  width: 140px;
+  position: fixed;
+  left: 0px;
+  top: 0;
+  bottom: 0;
+  background: #414445;
+  transition: all 0.5s ease;
+  z-index: 1;
+  
+}
+.wm-Nav-LeftPane .ms-Nav-navItems {
+  padding-top: 0;
+  -webkit-padding-start: 0px;
+  -webkit-margin-before: 0;
+}
+
+
+
+
+.wm-Nav-LeftPane .Sidebar-Menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  font-size: 0.9rem;
+}
+.wm-Nav-LeftPane .Sidebar-Menu > li {
+  border-bottom: 1px solid #414445;
+  position: relative;
+}
+.wm-Nav-LeftPane .Sidebar-Menu > li a {
+  color: #d2d5d7;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.5s ease;
+ 
+}
+
+.wm-Nav-LeftPane .Sidebar-Menu > li a:hover, .wm-Nav-LeftPane .Sidebar-Menu > li a:focus {
+  background: #03b2d5;
+  background: -moz-linear-gradient(left, #03b2d5 0%, #00d199 100%);
+  background: -webkit-linear-gradient(left, #03b2d5 0%, #00d199 100%);
+  background: linear-gradient(to right, #03b2d5 0%, #00d199 100%);
+  color: #fff;
+}
+.wm-Nav-LeftPane .Sidebar-Menu > li > a {
+  padding: 10px 10px;
+  align-items: left;
+  background: #414445;
+
+}
+
+
+.wm-Nav-LeftPane .Sidebar-Menu > li:hover > a {
+  background: #03b2d5;
+  background: -moz-linear-gradient(left, #03b2d5 0%, #00d199 100%);
+  background: -webkit-linear-gradient(left, #03b2d5 0%, #00d199 100%);
+  background: linear-gradient(to right, #03b2d5 0%, #00d199 100%);
+  color: #fff;
+}
+
+.header {
+  background: #03b2d5;
+  background: -moz-linear-gradient(left, #03b2d5 0%, #00d199 100%);
+  background: -webkit-linear-gradient(left, #03b2d5 0%, #00d199 100%);
+  background: linear-gradient(to right, #03b2d5 0%, #00d199 100%);
+}
+
+.logo-section {
+  padding: 10px 15px 5px;
+}
+
+.header-right-section a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 15px;
+  transition: all 1s ease;
+}
+.header-right-section a:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 90px;
+  right: 0;
+  text-align: center;
+  background: #edf1f5;
+  font-size: 0.75rem;
+}
+.footer p {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
